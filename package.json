@@ -6,7 +6,7 @@
     "test": "standard",
     "lint": "standard",
     "dev:run": "next dev",
-    "dev:lint": "sleep 3 && yarn lint-watch",
+    "dev:lint": "sleep 5 && yarn lint-watch",
     "lint-watch": "nodemon --exec 'standard' --watch '**/*.js' --ignore node_modules"
   },
   "dependencies": {
