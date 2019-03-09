@@ -3,7 +3,7 @@ import { useState } from 'react'
 const loadFromLocalStorage = () => {
   if (!process.browser) return {}
   try {
-    return JSON.parse(localStorage.getItem('localstorage-demo'))
+    return JSON.parse(window.localStorage.getItem('localstorage-demo'))
   } catch (error) {
     return {}
   }
@@ -11,7 +11,7 @@ const loadFromLocalStorage = () => {
 
 const saveToLocalStorage = (payload) => {
   if (!process.browser) return
-  localStorage.setItem('localstorage-demo', JSON.stringify(payload))
+  window.localStorage.setItem('localstorage-demo', JSON.stringify(payload))
 }
 
 function useLocalStorage (initialData) {
