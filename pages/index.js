@@ -1,4 +1,5 @@
 import Nav from '../components/Nav'
+import Foot from '../components/Foot'
 import useLocalStorage from '../modules/useLocalStorage'
 
 export default function () {
@@ -12,6 +13,7 @@ export default function () {
       <button onClick={() => patchSettings({ isItFunky: !settings.isItFunky })}>
         turn {settings.isItFunky ? 'off' : 'on'} funky-ness
       </button>
+      <Foot />
     </>
   )
 }
