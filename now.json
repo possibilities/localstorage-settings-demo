@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "react-context-settings",
+  "name": "localstorage-settings-demo",
   "public": true,
   "builds": [
     { "src": "next.config.js", "use": "@now/next" }
