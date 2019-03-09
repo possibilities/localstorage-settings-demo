@@ -14,6 +14,13 @@ export default () => (
       {` `}|{` `}
       <Link href='/about'><a>about</a></Link>
     </nav>
-    <p><em>note: to see flicker choose "yes" and refresh page</em></p>
+    <>
+      <style jsx>{`
+        span {
+          background: yellow;
+        }
+      `}</style>
+      <span>to see flicker between server/client rendering choose "yes" and refresh page</span>
+    </>
   </>
 )
